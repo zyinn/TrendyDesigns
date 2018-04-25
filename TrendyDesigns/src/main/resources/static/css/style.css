@@ -71,7 +71,7 @@ label{
 }
 /*-- //social-icons --*/
 .logo h1 a {
-    font-size: 1.13em;
+    font-size: smaller;
     color: #fff;
     text-transform: uppercase;
     letter-spacing: 2px;
