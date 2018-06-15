@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="top.onedream.trendydesigns.repository.UserRepository">
+    <resultMap id="BaseResultMap" type="top.onedream.trendydesigns.model.UserModel">
+        <result column="u_id" property="u_id" />
+        <result column="u_name" property="u_name" />
+    </resultMap>
+
+    <parameterMap id="User" type="top.onedream.trendydesigns.model.UserModel"/>
+
+    <sql id="Base_Column_List">
+        u_id, u_name
+    </sql>
+    <select id="findAllUser" resultMap="BaseResultMap" >
+        select
+        <include refid="Base_Column_List" />
+        from cs_userinfo
+    </select>
+
+    <insert id="createUser" parameterMap="User" useGeneratedKeys="true" keyProperty="id">
+        insert into
+            cs_userinfo(u_id,u_name)
+        values
+            (#{u_id},#{u_name})
+    </insert>
+
+</mapper>

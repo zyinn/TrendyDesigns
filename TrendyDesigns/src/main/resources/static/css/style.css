@@ -15,6 +15,13 @@ body a{
 a:hover{
 	text-decoration:none;
 }
+#team ul li a:hover{
+    color: #23B684;
+}
+#team ul li a{
+    color: #8e44ad;
+    font-family: 华文隶书;
+}
 input[type="button"],input[type="submit"],.contact-form input[type="submit"]{
 	transition:0.5s all;
 	-webkit-transition:0.5s all;
@@ -2549,5 +2556,6 @@ span.menu {
 	.about-img1 i, .about-img2 i {
 		font-size: 2.5em;
 	}
+
 }
 /*--//responsive--*/
