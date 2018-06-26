@@ -45,4 +45,9 @@ public class TrendyDesignsController {
     public String mapController() {
         return "chinaMap";
     }
+
+    @RequestMapping("cat")
+    public String catController() {
+        return "cat";
+    }
 }
